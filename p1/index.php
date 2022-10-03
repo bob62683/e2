@@ -18,9 +18,9 @@ for($i=0; $i<10; $i++) {
 
     $thrown = ['PlayerA' => $moves[rand(0, 4)], 'PlayerB' => $moves[rand(0, 4)]];
 
-    //+ Compare Player A move vs Player B Move
-    //+ If Player A and Player B throw same move, declare a tie
-    //+ Else, name a winnner
+    //Compare Player A move vs Player B Move
+    //If Player A and Player B throw same move, declare a tie
+    //Else, name a winnner
 
     if ($thrown['PlayerA'] == $thrown['PlayerB']) {
         $outcome="Tie!";
