@@ -2,7 +2,7 @@
 <html lang='en'>
 
 <head>
-    <title>E3 Project 1</title>
+    <title>E2 Project 1</title>
     <meta charset='utf-8'>
     <link href=data:, rel=icon>
 </head>
