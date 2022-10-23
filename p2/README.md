@@ -1,4 +1,4 @@
-# E2 Project 1
+# E2 Project 2
 + By: Robert Vernam
 + URL http://e2p2.robertvernam.me
 

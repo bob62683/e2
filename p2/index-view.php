@@ -9,12 +9,15 @@
 </head>
 
 <body>
+
     <header>
         <h1>E2 - Project 2</h1>
     </header>
+
     <main>
         <h2>Rock, Paper, Scissors, Lizard, Spock!</h2>
         <p><img src='images/RPSLS.webp' alt='Rock, Paper, Scissors, Lizard, Spock!'></p>
+
         <form method='POST' action='process.php'>
             <label for='name'>Name:</label><input type='text' id='name' name='name'
                 value='<?php echo (!isset($name)) ? 'Player A' : $name ?>'><br /><br />
@@ -49,8 +52,11 @@
             </ul>
         </section>
         <?php } ?>
+
     </main>
+
     <footer></footer>
+
 </body>
 
 </html>
