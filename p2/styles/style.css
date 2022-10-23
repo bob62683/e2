@@ -17,14 +17,30 @@ header {
 }
 
 main p img {
-    width: 20rem;
+    width: 18rem;
+}
+
+main form div {
+    width: 25%;
+    border-radius: .5rem;
+    background: #cccccc;
+    padding: .15rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .25rem;
 }
 
 main form div p {
     margin: 0;
+    padding: .25rem;
+    margin-bottom: .5rem;
+    text-align: justify;
+}
+
+main form div h3 {
+    margin: 0;
     padding: 0;
     margin-bottom: .5rem;
-    font-size: 1.5rem;
 }
 
 main section h2 {

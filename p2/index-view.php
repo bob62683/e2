@@ -19,7 +19,9 @@
             <label for='name'>Name:</label><input type='text' id='name' name='name'
                 value='<?php echo (!isset($name)) ? 'Player A' : $name ?>'><br /><br />
             <div>
-                <p>Choose Your Weapon!</p>
+                <h3><b>Instructions:</b></h3>
+                <p>Choose your weapon and fight. Based on what your opponent chooses, a winner will be determined or it
+                    will be a tie.</p>
             </div>
             <input type='radio' id='Rock' name='throw' value='Rock'
                 <?php echo (!isset($playerA) or $playerA == 'Rock') ? 'checked' : ''?>><label for='Rock'>Rock</label>
