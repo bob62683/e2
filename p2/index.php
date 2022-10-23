@@ -11,4 +11,4 @@ if(isset($_SESSION['results'])) {
     $_SESSION['results'] = null;
 }
 
-require 'index-view.php';?>
+require 'index-view.php';
