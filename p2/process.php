@@ -46,4 +46,4 @@ $_SESSION['results'] = [
     'outcome' => $outcome
 ];
 
-header('Location: index.php');
+header('Location: /');
