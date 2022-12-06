@@ -18,7 +18,7 @@
         <h2>Rock, Paper, Scissors, Lizard, Spock!</h2>
         <p><img src='images/RPSLS.webp' alt='Rock, Paper, Scissors, Lizard, Spock!'></p>
 
-        <form method='POST' action='process.php'>
+        <form method='POST' action='/process'>
             <label for='name'>Name:</label><input type='text' id='name' name='name'
                 value='<?php echo (!isset($name)) ? 'Player A' : $name ?>'><br /><br />
             <div>
@@ -41,7 +41,7 @@
             <button type='submit'><?php echo (isset($outcome)) ? 'Fight Again!' : 'Fight!'?></button>
         </form>
 
-        <?php if (isset($results)) { ?>
+        <?php if (isset($outcome)) { ?>
         <section>
             <h2>Results:</h2>
             <ul>
