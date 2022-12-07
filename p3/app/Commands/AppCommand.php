@@ -8,4 +8,14 @@ class AppCommand extends Command
     {
         dump('It works! You invoked your first command.');
     }
+
+    public function migrate()
+    {
+        $this->app->db()->createTable('rpsls_results', [
+            'name' => 'varchar(255)',
+            'thrown' => 'varchar(255)',
+            'outcome' => 'varchar(255)',
+            'timestamp' => 'date'
+        ]);
+    }
 }

@@ -4,6 +4,11 @@
 
 <h2>Rock, Paper, Scissors, Lizard, Spock!</h2>
 <p><img src='images/RPSLS.webp' alt='Rock, Paper, Scissors, Lizard, Spock!'></p>
+@if ($app->errorsExist())
+<div class='alert alert-danger'>
+    <p>Name is required!</p>
+</div>
+@endif
 <form method='POST' action='/process'>
     <label for='name'>Name:</label><input type='text' id='name' name='name'
         value='<?php echo (!isset($name)) ? 'Player A' : $name ?>'><br /><br />

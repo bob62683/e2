@@ -62,6 +62,10 @@ class AppController extends Controller
             }
         }
 
+        $this->app->validate([
+            'name' => 'required'
+        ]);
+
         return $this->app->redirect('/', [
             'results' => true,
             'playerA' => $playerA,
