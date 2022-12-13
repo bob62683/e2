@@ -30,7 +30,7 @@ class AppController extends Controller
     {
         $moves = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock'];
 
-    //Build Winning moves array of arrays
+        //Build Winning moves array of arrays
         $winningMoves=[
             $winningMove01 = ['PlayerA' => 'Scissors', 'PlayerB' => 'Paper'],
             $winningMove02 = ['PlayerA' => 'Paper', 'PlayerB' => 'Rock'],
@@ -66,12 +66,32 @@ class AppController extends Controller
             'name' => 'required'
         ]);
 
+        $this->app->db()->insert('rpsls_results', [
+            'name' => $name,
+            'thrown' => $playerA,
+            'outcome' => $outcome,
+            'timestamp' => date('Y-m-d H:i:s')
+        ]);
+
         return $this->app->redirect('/', [
             'results' => true,
             'playerA' => $playerA,
             'playerB' => $playerB,
             'name' => $name,
             'outcome' => $outcome
+        ]);
+    }
+
+    /**
+     * This method is triggered by the route "/history"
+     */
+    public function history()
+    {
+
+        $rpslsResults = $this->app->db()->all('rpsls_results');
+
+        return $this->app->view('history', [
+            'rpslsResults' => $rpslsResults
         ]);
     }
 

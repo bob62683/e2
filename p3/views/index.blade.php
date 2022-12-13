@@ -31,6 +31,7 @@
         for='Lizard'>Lizard</label><br /><br />
     <button type='submit'><?php echo (isset($outcome)) ? 'Fight Again!' : 'Fight!'?></button>
 </form>
+<div><a class='navlink' href='/history'>Game History</a></div>
 
 @if ($results)
 <section>
