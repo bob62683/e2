@@ -6,6 +6,11 @@
     "require": {
         "susanbuck/e2core": "^0.1.0"
     },
+    "require-dev": {
+        "codeception/codeception": "^5.0",
+        "codeception/module-asserts": "^3.0",
+        "codeception/module-phpbrowser": "*"
+    },
     "autoload": {
         "psr-4": {
             "App\\": "app/"

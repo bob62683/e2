@@ -10,7 +10,7 @@
 </div>
 @endif
 <form method='POST' action='/process'>
-    <label for='name'>Name:</label><input type='text' id='name' name='name'
+    <label for='name'>Name:</label><input test='player-name-input' type='text' id='name' name='name'
         value='<?php echo (!isset($name)) ? 'Player A' : $name ?>'><br /><br />
     <div>
         <h3><b>Instructions:</b></h3>
@@ -25,11 +25,11 @@
         <?php echo (isset($playerA) and $playerA == 'Scissors') ? 'checked' : ''?>><label
         for='Scissors'>Scissors</label>
     <input type='radio' id='Spock' name='throw' value='Spock'
-        <?php echo (isset($playerA) and $playerA == 'Spock') ? 'checked' : ''?>><label for='Spock'>Spock</label>
+        <?php echo (isset($playerA) and $playerA == 'Lizard') ? 'checked' : ''?>><label for='Spock'>Spock</label>
     <input type='radio' id='Lizard' name='throw' value='Lizard'
-        <?php echo (isset($playerA) and $playerA == 'Lizard') ? 'checked' : ''?>><label
+        <?php echo (isset($playerA) and $playerA == 'Spock') ? 'checked' : ''?>><label
         for='Lizard'>Lizard</label><br /><br />
-    <button type='submit'><?php echo (isset($outcome)) ? 'Fight Again!' : 'Fight!'?></button>
+    <button test='submit' type='submit'><?php echo (isset($outcome)) ? 'Fight Again!' : 'Fight!'?></button>
 </form>
 <div><a class='navlink' href='/history'>Game History</a></div>
 
