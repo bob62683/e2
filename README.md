@@ -12,7 +12,14 @@
 + Image souirce URL https://static.wikia.nocookie.net/bigbangtheory/images/7/7d/RPSLS.png
 
 ## Notes for instructor
-*any notes for me to refer to while grading; if none, omit this section*
+I tried to implement math solution as suggested in P2 notes, but ran out of time. Had issue with sending the value correctly and mapping to a number. I think I had the modulus math to make it work:
+if ($playerA == $playerB) {
+        $outcome = "Tie";
+    } elseif (($playerA) % 3 == $playerB) {
+        $winner = "$name Wins!";
+    } else {
+        $winner = "$name's Opponent Wins!";
+}
 
 ## Codeception testing output
 ```
